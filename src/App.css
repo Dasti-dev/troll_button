@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(229, 224, 224);
     background: url(./giphy\ \(1\).gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,8 +14,10 @@
     box-sizing: border-box;
     padding: 2em;
     /* border: 2px solid grey; */
-    color: rgb(255, 213, 0);
-    text-shadow: 2px 2px 4px #000000;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 4px #ffffff;
+    background-color: rgb(255, 255, 255,0.1);
+    border-radius: 10px;
 }
 h1{
     font-size: 3em;
@@ -47,3 +49,19 @@ h1{
     background-color: #ff0000;
     color: #ffffff;
 }
+.ani{
+    position: relative;
+    animation: hoverAnimation 0.75s infinite alternate; 
+}
+
+@keyframes hoverAnimation {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-5px) scale(1.05);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }

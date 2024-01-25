@@ -39,8 +39,8 @@ function App() {
         </h1>
       </div>
       {!flower && <div className="main">
-        <button className="btn" onClick={handleClick} style={{position:'absolute',...position,}}>NO</button>
-        <button className="btn" onClick={handleflower}>YES</button>   
+        <button className="btn" onMouseEnter={handleClick} style={{position:'absolute',...position,}}>NO</button>
+        <button className="btn ani" onClick={handleflower}>YES</button>   
       </div>}
       {flower && <div className='flower'>
           <img src={gif} alt="I knew it" />
